@@ -1,0 +1,127 @@
+.notification-container {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.notification-container:hover {
+    cursor: pointer;
+}
+
+.notification-img {
+    width: 4rem;
+    height: auto;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-text-wrapper {
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.notification-text {
+    font-size: 1rem;
+}
+
+
+.notification-name {
+    font-weight: 800;
+}
+
+.notification-name:hover {
+    color: var(--blue);
+}
+
+.notification-flavor-text {
+    color: var(--dark-grayish-blue);
+}
+
+.unread-notification-circle {
+    width: 10px;
+    height: 10px;
+    background: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.notification-time {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--grayish-blue);
+}
+
+/* handling type-data */
+
+.inline-type-data {
+    color: var(--grayish-blue);
+    font-weight: 800;
+}
+
+.inline-type-data:hover {
+    color: var(--blue);
+}
+
+.pm-container {
+    max-width: 600px;
+    margin-top: 1rem;
+    border: 1px solid var(--dark-grayish-blue);
+    color: var(--dark-grayish-blue);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.pm-container:hover {
+    background: var(--light-grayish-blue-2);
+}
+
+.notification-picture {
+    height: calc(100% - 2rem);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* media queries */
+@media screen and (max-width: 750px) {
+    .notification-img {
+        width: 3rem;
+    }
+
+    .notification-text-wrapper {
+        min-height: 1.5rem;
+    }
+
+    .notification-name, .notification-flavor-text, .inline-type-data {
+        font-size: 0.8rem;
+    }
+
+    .notification-time {
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .pm-container {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .notification-picture {
+        width: 3rem;
+        position: static;
+        float: right;
+        top: default;
+        left: default;
+    }
+}

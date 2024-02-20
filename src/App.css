@@ -1,0 +1,98 @@
+main {
+  width: 750px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 50px 2rem;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+/* general */
+button {
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.notifications-header-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.notifications-badge {
+  height: 100%;
+  width: 3rem;
+  background: var(--blue);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.all-read-button {
+  border: none;
+  background: none;
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+}
+
+.all-read-button:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+
+
+/* notifications */
+
+.notification-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 750px) {
+  main {
+    width: 100%;
+    
+    min-width: 375px;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .notifications-badge {
+    width: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .all-read-button {
+    font-size: 0.8rem;
+  }
+}
